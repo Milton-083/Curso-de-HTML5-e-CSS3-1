@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: rgb(199, 160, 160);
+    margin: 4%;
+}
+h1 {
+    text-align: center;
+    color: rgb(0, 47, 255);
+    font-weight: 900;
+    margin: 30px 0 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 8px ;
+}
+h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+p {
+    text-align: center;
+}
+
+#aa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lili {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.li-especial {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.img-icones {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        button {
+            padding: 5px 8px;
+            background-color: orange;
+            border: 2px solid orangered;
+        }
+        #vid {
+            width: 100%;
+        }
+        #vid video {
+            max-width: 100%;
+            max-height: 400px;
+        }
+        img {
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Home</h1>
+    <hr>
+    <p>
+        <a href="index.html">voltar para primeira página</a>
+        <audio src="118676b62fdf4b56b947537b02e47168.opus" controls></audio>
+    </p>
+
+    <div>
+        <button id="btn1" onclick="entrar()">
+            <a href="https://youtube.com" hreflang="en" target="_blank" rel="Externos">YouTube</a>
+        </button>
+        <button id="btn2" onclick="entrar()">
+            <a href="https://facebook.com" target="_blank" rel="Externos" >Facebook</a>
+        </button>
+        <button id="btn3" onclick="entrar()">
+            <a href="https://instagram.com" target="_blank" rel="Externos">Instagram</a>
+        </button>
+        <button id="btn4" onclick="entrar()">
+            <a href="https://whatsapp.com" target="_blank" rel="Externos">WhatsApp</a>
+        </button>
+        <button id="btn5" onclick="entrar()">
+            <a href="https://tiktok.com" target="_blank" rel="Externos">TikTok</a>
+        </button>
+        <button id="btn6" onclick="entrar()">
+            <a href="https://linkedin.com" target="_blank" rel="Externos">LinkedIn</a>
+        </button>
+    </div>
+
+    <div id="vid">
+        <video src="../../video-global/Entrelinhas Pontilhadas 1x01.mp4" controls ></video>
+
+        <button>
+            <a href="../../video-global/Entrelinhas Pontilhadas 1x01.mp4" rel="" download="Entrelinhas Pontilhadas 01/06" type="video/mp4">download</a>
+        </button>
+    </div>
+    <div>
+        <img src="../../imagem-global/img-livro-js.png" alt="">
+
+        <button>
+            <a href="../../pasta-pdf/javascript-guia-definitivo.pdf" download="javascript-o-guia-definitivo" type="aplication/pdf">download pdf</a>
+        </button>
+    </div>
+
+
+
+
+    <script>
+        var y = window.document.getElementById("btn1");
+        var f = window.document.getElementById("btn2");
+        var i = window.document.getElementById("btn3");
+        var w = window.document.getElementById("btn4");
+        var t = window.document.getElementById("btn5");
+        var l = window.document.getElementById("btn6");
+
+        function entrar() {
+            
+        }
+    </script>
+</body>
+</html>
