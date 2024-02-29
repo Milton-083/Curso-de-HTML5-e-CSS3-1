@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*  ----- / fontes \ ----- */
+@font-face {
+    font-family: "Passion-only";
+    src: url(../font/Passion_One/PassionOne-Regular.ttf), format(opentype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Passion-bold";
+    src: url(../font/Passion_One/PassionOne-Bold.ttf), format(opentype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Passion-black";
+    src: url(../font/Passion_One/PassionOne-Black.ttf), format(opentype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Sriracha-only";
+    src: url(../font/Sriracha/Sriracha-Regular.ttf), format(opentype);
+    font-weight: normal;
+}
+/*  ----- / fontes \ ----- */
+
+
+/*  ----- / style geral \ ----- */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --font-padrao: Verdana, sans-serif;
+    --font-passion-only: "Passion-only";
+    --font-passion-bold: "Passion-bold";
+    --font-passion-black: "Passion-black";
+    --font-sriracha-only: "Sriracha-only";
+}
+html, body {
+    font-family: var(--font-padrao);
+    background-color: rgb(224, 220, 220);
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/*  ----- / style geral \ ----- */
+
+/*  ---------- / style \ ---------- */
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+header > h1 {
+    font-family: var(--font-passion-only);
+    font-size: 10vw;
+    font-variant: small-caps;
+}
+header > p {
+    font-size: 1em;
+}
+
+main {
+
+}
+main section {
+    padding: 4em 0 4em 30px;
+}
+main section p {
+    font-family: var(--font-sriracha-only);
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding-bottom: 2em;
+}
+main section.normal {
+    background: white;
+}
+main section.image {
+    box-shadow: inset 6px 6px 13px black;
+}
+main section.image p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+main section#img1 {
+    background: rgba(2, 2, 165, 0.692) url(../image/background006.jpg) center center fixed;
+    background-size: cover;
+}
+main section#img2 {
+    background: rgba(2, 2, 165, 0.692) url(../image/background002.jpg) center center fixed;
+    background-size: cover;
+}
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}

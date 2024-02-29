@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/* ----- / fontes \ ----- */
+
+@font-face {
+    font-family: "Passion-one";
+    src: url(../fontes/Passion_One/PassionOne-Regular.ttf), format(opentype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Sriracha";
+    src: url(../fontes/Sriracha/Sriracha-Regular.ttf), format(opentype);
+    font-weight: normal;
+}
+
+
+/* ----- / fontes \ ----- */
+
+/* ----- / stilo geral \ ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --fonte-padrao: Verdana, Genera, Tahoma, sans-serif;
+    --fonte_passion_one: "Passion-one";
+    --fonte_sriracha: "Sriracha";
+}
+html, body {
+    min-height: 100vh;
+    background-color: rgb(212, 207, 207);
+    font-family: var(--fonte-padrao);
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ----- / stilo geral \ ----- */
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-size: 10vw;
+    font-variant: small-caps;
+    font-family: var(--fonte_passion_one);
+}
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
+    padding: 10vh 0;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte_sriracha);
+    font-size: 3.5vw;
+}
+section > p {
+    padding-bottom: 2em;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(90, 85, 85);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0 black;
+}
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 10px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.589);
+}
+section#img01 {
+    background: url(../imagens/background001.jpg) right center fixed;
+    background-size: cover;
+
+}
+section#img02 {
+    background: url(../imagens/background002.jpg) right center;
+    background-size: cover;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px
+}

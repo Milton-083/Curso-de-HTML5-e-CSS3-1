@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            height: 400px;
+        }
+        tr {
+            background-color: aqua;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+            color: red;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        td#b1 {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+
+    <!-- HIERARQUIA DE TABELAS SIMPLES
+            1º - <table> </table>: tabela;
+                2º - <tr> </tr>: (table row) ou linha de tabela;
+                    3º - <th></th>: (table header) ou cabeçalho de tabela;
+                    4º - <td> valor </td>: (table date) ou dado da tabela.
+    -->
+
+    <table>
+        <tr>
+            <td>A1</td>
+            <td id="b1">B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td id="a2">A2</td>
+            <td>B2</td>
+            <td id="c2">C2</td>
+        </tr>
+        <tr>
+            <td id="a3">A3</td>
+            <td>B3</td>
+            <td id="c3">C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td id="b4">B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
